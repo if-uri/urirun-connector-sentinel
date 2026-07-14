@@ -1,0 +1,4 @@
+[urirun.bindings]
+containment = urirun_connector_sentinel.core:urirun_bindings
+sentinel = urirun_connector_sentinel.core:sentinel_bindings
+trust = urirun_connector_sentinel.core:trust_bindings

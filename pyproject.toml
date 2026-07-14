@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "urirun-connector-sentinel"
+version = "0.1.0"
+description = "Optimistic autonomy + adaptive containment: containment:// (dimensioned narrowing) + trust:// (subject scores) + sentinel:// (observe→score→contain)"
+requires-python = ">=3.10"
+dependencies = ["urirun"]
+[project.entry-points."urirun.bindings"]
+containment = "urirun_connector_sentinel.core:urirun_bindings"
+trust = "urirun_connector_sentinel.core:trust_bindings"
+sentinel = "urirun_connector_sentinel.core:sentinel_bindings"
+[tool.setuptools]
+packages = ["urirun_connector_sentinel"]
